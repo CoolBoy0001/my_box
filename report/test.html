@@ -123,9 +123,9 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">Hello World!</h1>
 <p class='attribute'><strong>测试人员 : </strong> expert bugger</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-07-13 19:09:10</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:05.510315</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 2，错误 2，通过率= 0.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-07-14 08:07:55</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:06.508373</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 3，错误 3，通过率= 0.00%</p>
 
 <p class='description'>result: </p>
 </div>
@@ -136,7 +136,7 @@ function html_escape(s) {
 <a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 0.00% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
 <a class="btn btn-success" href='javascript:showCase(2)'>通过{ 0 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 2 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 3 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -158,11 +158,11 @@ function html_escape(s) {
 
 <tr class='errorClass warning'>
     <td>unittest.loader._FailedTest</td>
-    <td class="text-center">1</td>
+    <td class="text-center">2</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center">1</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',1)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center">2</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',2)" class="detail" id='c1'>详细</a></td>
 </tr>
 
 <tr id='ft1_1' class='none'>
@@ -186,6 +186,34 @@ Traceback (most recent call last):
   File "C:\Users\Administrator\PycharmProjects\my_box\testCase\testCaseHtml.py", line 4, in &lt;module&gt;
     import HTMLTestRunnerCN
 ModuleNotFoundError: No module named 'HTMLTestRunnerCN'
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_2' class='none'>
+    <td class='errorCase'><div class='testcase'>testCase_Orders</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
+    <div id='div_ft1_2' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
+    <div id='div_ft1_2' class="collapse in">
+    <pre>
+    
+ft1_2: ImportError: Failed to import test module: testCase_Orders
+Traceback (most recent call last):
+  File "C:\Python37\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Python37\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "C:\Users\Administrator\PycharmProjects\my_box\testCase\testCase_Orders.py", line 7
+SyntaxError: (unicode error) 'utf-8' codec can't decode byte 0xb4 in position 0: invalid start byte
 
 
 
@@ -238,10 +266,10 @@ selenium.common.exceptions.NoSuchElementException: Message: no such element: Una
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>2</td>
+    <td>3</td>
     <td>0</td>
     <td>0</td>
-    <td>2</td>
+    <td>3</td>
     <td>通过率：0.00%</td>
 </tr>
 </table>

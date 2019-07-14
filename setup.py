@@ -4,14 +4,15 @@ import urllib.request
 from distutils.core import setup
 from setuptools import find_packages
 setup(
-name="my_box",
+name="Auto_Common",
 version="0.0.1",
-description="my_box env:common",
+description="testcase.common",
 author="CoolBoy0001",
 python_requires=">=3.6",
-install_requires=["pymysql", "requests", "ddt", "xlrd", "xlwt"],#需要安装的依赖
+install_requires=["pymysql", "requests", "ddt", "xlrd", "xlwt","pyyaml","chardet"],#需要安装的依赖
 #packages=find_packages(exclude=["test", "test*"]), # 需要打包的package,使用find_packages 来动态获取package，exclude参数的存在，使打包的时候，排除掉这些文件
-packages = ['common'],
+packages = ['common',"common.tools"],
+include_package_data=True,
 )
 '''
 setup函数包含的参数解释
